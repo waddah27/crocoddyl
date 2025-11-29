@@ -107,11 +107,15 @@ Just clone it (with `--recursive`) into a catkin workspace and compile it.
    sudo apt install robotpkg-py3\*-crocoddyl
    ```
 3. Configure your environment variables:
+First, verify your current python version:
+```bash
+python3 --version
+```
    ```bash
    export PATH=/opt/openrobots/bin:$PATH
    export PKG_CONFIG_PATH=/opt/openrobots/lib/pkgconfig:$PKG_CONFIG_PATH
    export LD_LIBRARY_PATH=/opt/openrobots/lib:$LD_LIBRARY_PATH
-   export PYTHONPATH=/opt/openrobots/lib/python3.10/site-packages:$PYTHONPATH
+   export PYTHONPATH=/opt/openrobots/lib/python3.<your-python-version>/site-packages:$PYTHONPATH
    ```
 
 ### :file_folder: From source
